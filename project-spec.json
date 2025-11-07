@@ -1,0 +1,90 @@
+{
+  "project": {
+    "name": "catforge",
+    "description": "An Echo AI app that generates funny themed cat images for social media. Users describe a cat (city, colour, scenery, theme) and Echo bills usage automatically via configured providers.",
+    "repository_template": "echo/templates/next-image",
+    "author": "pxng0lin hxcker"
+  },
+
+  "stack": {
+    "frontend": "Next.js 14 + TailwindCSS",
+    "backend": "Echo server actions (Node 18 / Edge runtime)",
+    "ai_models": ["replicate/sdxl", "replicate/hunyuan-video"],
+    "payments": "Echo usage-based billing",
+    "storage": ["IPFS", "Fairdrive (optional)"]
+  },
+
+  "environment": {
+    "variables": {
+      "ECHO_API_KEY": "<your_echo_key>",
+      "X402_PRIVATE_KEY": "<your_wallet_private_key>",
+      "BASE_RPC_URL": "https://base.blockpi.network/v1/rpc/public",
+      "REPLICATE_API_TOKEN": "<your_replicate_key>"
+    },
+    "commands": {
+      "dev": "pnpm dev",
+      "build": "pnpm build",
+      "start": "pnpm start"
+    }
+  },
+
+  "folders": {
+    "app": {
+      "page.tsx": "Main UI form where users enter cat parameters (city, colour, scenery, theme) and view results.",
+      "actions/generate.ts": "Server action that calls Echo to generate the media after building the prompt.",
+      "api/webhook/route.ts": "Optional: webhook listener for on-chain payment confirmations.",
+      "layout.tsx": "Page wrapper and metadata."
+    },
+    "lib": {
+      "echo.ts": "Initialises Echo SDK and defines which models (SDXL, HunyuanVideo) to use.",
+      "utils.ts": "Helper functions for prompt building and price logic."
+    },
+    "components": {
+      "Form.tsx": "Reusable form inputs.",
+      "ImagePreview.tsx": "Displays generated image preview and sharing tools.",
+      "Loader.tsx": "Shows generation progress indicator."
+    },
+    "smart_contract": {
+      "CatForgePayments.sol": "Optional Base contract to log payments and emit PaymentReceived events."
+    },
+    "public": {
+      "logo.png": "App icon."
+    }
+  },
+
+  "workflow": [
+    {
+      "step": "1",
+      "title": "User Input",
+      "details": "Collect city, colour, scenery, and theme choices from the form."
+    },
+    {
+      "step": "2",
+      "title": "Prompt Build",
+      "details": "Assemble an over-the-top prompt combining every field with the chosen theme vibe."
+    },
+    {
+      "step": "3",
+      "title": "AI Generation",
+      "details": "Call Echo's image endpoint (e.g. GPT-Image) and await the URL response."
+    },
+    {
+      "step": "4",
+      "title": "Output Display",
+      "details": "Return the image URL to the frontend, show preview, and enable share/download actions."
+    }
+  ],
+
+  "deployment": {
+    "local": "pnpm dev",
+    "vercel": "automatic from GitHub repo",
+    "linode": "docker build -t catforge-ai . && docker run -p 3000:3000 catforge-ai"
+  },
+
+  "future_expansions": [
+    "NFT minting for generated cats",
+    "Leaderboard of funniest cats",
+    "Echo Agent marketplace for custom cat styles",
+    "usage insights surfaced directly inside the app"
+  ]
+}

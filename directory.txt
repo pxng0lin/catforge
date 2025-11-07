@@ -1,0 +1,145 @@
+.
+├── components.json
+├── directory.txt
+├── eslint.config.mjs
+├── next.config.ts
+├── next-env.d.ts
+├── node_modules
+│   ├── ai -> .pnpm/ai@5.0.47_zod@3.25.76/node_modules/ai
+│   ├── autonumeric -> .pnpm/autonumeric@4.10.9/node_modules/autonumeric
+│   ├── class-variance-authority -> .pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority
+│   ├── clsx -> .pnpm/clsx@2.1.1/node_modules/clsx
+│   ├── @eslint
+│   │   ├── config-array -> ../.pnpm/@eslint+config-array@0.21.1/node_modules/@eslint/config-array
+│   │   ├── config-helpers -> ../.pnpm/@eslint+config-helpers@0.4.2/node_modules/@eslint/config-helpers
+│   │   ├── core -> ../.pnpm/@eslint+core@0.17.0/node_modules/@eslint/core
+│   │   ├── eslintrc -> ../.pnpm/@eslint+eslintrc@3.3.1/node_modules/@eslint/eslintrc
+│   │   ├── js -> ../.pnpm/@eslint+js@9.39.1/node_modules/@eslint/js
+│   │   ├── object-schema -> ../.pnpm/@eslint+object-schema@2.1.7/node_modules/@eslint/object-schema
+│   │   └── plugin-kit -> ../.pnpm/@eslint+plugin-kit@0.4.1/node_modules/@eslint/plugin-kit
+│   ├── eslint -> .pnpm/eslint@9.39.1_jiti@2.6.1/node_modules/eslint
+│   ├── @eslint-community
+│   │   ├── eslint-utils -> ../.pnpm/@eslint-community+eslint-utils@4.9.0_eslint@9.39.1_jiti@2.6.1_/node_modules/@eslint-community/eslint-utils
+│   │   └── regexpp -> ../.pnpm/@eslint-community+regexpp@4.12.2/node_modules/@eslint-community/regexpp
+│   ├── eslint-config-next -> .pnpm/eslint-config-next@15.4.7_eslint@9.39.1_jiti@2.6.1__typescript@5.9.3/node_modules/eslint-config-next
+│   ├── eslint-import-resolver-node -> .pnpm/eslint-import-resolver-node@0.3.9/node_modules/eslint-import-resolver-node
+│   ├── eslint-import-resolver-typescript -> .pnpm/eslint-import-resolver-typescript@3.10.1_eslint-plugin-import@2.32.0_eslint@9.39.1_jiti@2.6.1_/node_modules/eslint-import-resolver-typescript
+│   ├── eslint-module-utils -> .pnpm/eslint-module-utils@2.12.1_@typescript-eslint+parser@8.46.3_eslint@9.39.1_jiti@2.6.1__typescr_mboknch7aqecziezrkxpa2z6ie/node_modules/eslint-module-utils
+│   ├── eslint-plugin-import -> .pnpm/eslint-plugin-import@2.32.0_@typescript-eslint+parser@8.46.3_eslint@9.39.1_jiti@2.6.1__typesc_wtdqounhvicp36a4gminnntyiq/node_modules/eslint-plugin-import
+│   ├── eslint-plugin-jsx-a11y -> .pnpm/eslint-plugin-jsx-a11y@6.10.2_eslint@9.39.1_jiti@2.6.1_/node_modules/eslint-plugin-jsx-a11y
+│   ├── eslint-plugin-react -> .pnpm/eslint-plugin-react@7.37.5_eslint@9.39.1_jiti@2.6.1_/node_modules/eslint-plugin-react
+│   ├── eslint-plugin-react-hooks -> .pnpm/eslint-plugin-react-hooks@5.2.0_eslint@9.39.1_jiti@2.6.1_/node_modules/eslint-plugin-react-hooks
+│   ├── eslint-scope -> .pnpm/eslint-scope@8.4.0/node_modules/eslint-scope
+│   ├── eslint-visitor-keys -> .pnpm/eslint-visitor-keys@4.2.1/node_modules/eslint-visitor-keys
+│   ├── lucide-react -> .pnpm/lucide-react@0.263.1_react@19.1.0/node_modules/lucide-react
+│   ├── @merit-systems
+│   │   ├── echo-next-sdk -> ../.pnpm/@merit-systems+echo-next-sdk@0.0.30_@ai-sdk+react@2.0.87_react@19.1.0_zod@3.25.76__next@15.4._d5begzg2irmsck5pf3yjy2ok4q/node_modules/@merit-systems/echo-next-sdk
+│   │   └── echo-react-sdk -> ../.pnpm/@merit-systems+echo-react-sdk@1.0.39_@ai-sdk+react@2.0.87_react@19.1.0_zod@3.25.76__ai@5.0.47_uzt36fuw366e77etup26n4vwdm/node_modules/@merit-systems/echo-react-sdk
+│   ├── nanoid -> .pnpm/nanoid@5.1.6/node_modules/nanoid
+│   ├── @next
+│   │   └── eslint-plugin-next -> ../.pnpm/@next+eslint-plugin-next@15.4.7/node_modules/@next/eslint-plugin-next
+│   ├── next -> .pnpm/next@15.4.7_@opentelemetry+api@1.9.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next
+│   ├── openai -> .pnpm/openai@5.23.2_zod@3.25.76/node_modules/openai
+│   ├── @radix-ui
+│   │   ├── react-avatar -> ../.pnpm/@radix-ui+react-avatar@1.1.10_@types+react-dom@19.2.2_@types+react@19.1.10__@types+react@19.1_aatxgbxb47ojmtm3lqovav4ksy/node_modules/@radix-ui/react-avatar
+│   │   ├── react-dialog -> ../.pnpm/@radix-ui+react-dialog@1.1.15_@types+react-dom@19.2.2_@types+react@19.1.10__@types+react@19.1_oganfqsiohrijttyorrk5li3pu/node_modules/@radix-ui/react-dialog
+│   │   ├── react-dropdown-menu -> ../.pnpm/@radix-ui+react-dropdown-menu@2.1.16_@types+react-dom@19.2.2_@types+react@19.1.10__@types+rea_g6hfyxdzcq3tem3n7tfojtyt7e/node_modules/@radix-ui/react-dropdown-menu
+│   │   ├── react-popover -> ../.pnpm/@radix-ui+react-popover@1.1.15_@types+react-dom@19.2.2_@types+react@19.1.10__@types+react@19._c5yfmxivaury2eavmzxppdy7pm/node_modules/@radix-ui/react-popover
+│   │   ├── react-select -> ../.pnpm/@radix-ui+react-select@2.2.6_@types+react-dom@19.2.2_@types+react@19.1.10__@types+react@19.1._3bvdyh5wjob6jftoz5qenv5jua/node_modules/@radix-ui/react-select
+│   │   ├── react-slot -> ../.pnpm/@radix-ui+react-slot@1.2.3_@types+react@19.1.10_react@19.1.0/node_modules/@radix-ui/react-slot
+│   │   └── react-tooltip -> ../.pnpm/@radix-ui+react-tooltip@1.2.8_@types+react-dom@19.2.2_@types+react@19.1.10__@types+react@19.1_gidfm7i6jlgsbdysiyefevnnbi/node_modules/@radix-ui/react-tooltip
+│   ├── react -> .pnpm/react@19.1.0/node_modules/react
+│   ├── react-dom -> .pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom
+│   ├── @rushstack
+│   │   └── eslint-patch -> ../.pnpm/@rushstack+eslint-patch@1.14.1/node_modules/@rushstack/eslint-patch
+│   ├── @tailwindcss
+│   │   └── postcss -> ../.pnpm/@tailwindcss+postcss@4.1.16/node_modules/@tailwindcss/postcss
+│   ├── tailwindcss -> .pnpm/tailwindcss@4.1.16/node_modules/tailwindcss
+│   ├── tailwind-merge -> .pnpm/tailwind-merge@2.6.0/node_modules/tailwind-merge
+│   ├── tw-animate-css -> .pnpm/tw-animate-css@1.4.0/node_modules/tw-animate-css
+│   ├── @types
+│   │   ├── node -> ../.pnpm/@types+node@20.19.24/node_modules/@types/node
+│   │   ├── react -> ../.pnpm/@types+react@19.1.10/node_modules/@types/react
+│   │   └── react-dom -> ../.pnpm/@types+react-dom@19.2.2_@types+react@19.1.10/node_modules/@types/react-dom
+│   ├── typescript -> .pnpm/typescript@5.9.3/node_modules/typescript
+│   └── @typescript-eslint
+│       ├── eslint-plugin -> ../.pnpm/@typescript-eslint+eslint-plugin@8.46.3_@typescript-eslint+parser@8.46.3_eslint@9.39.1_jiti@2_k2emhiflgflnkogj6ya4z3oabi/node_modules/@typescript-eslint/eslint-plugin
+│       ├── parser -> ../.pnpm/@typescript-eslint+parser@8.46.3_eslint@9.39.1_jiti@2.6.1__typescript@5.9.3/node_modules/@typescript-eslint/parser
+│       ├── project-service -> ../.pnpm/@typescript-eslint+project-service@8.46.3_typescript@5.9.3/node_modules/@typescript-eslint/project-service
+│       ├── scope-manager -> ../.pnpm/@typescript-eslint+scope-manager@8.46.3/node_modules/@typescript-eslint/scope-manager
+│       ├── tsconfig-utils -> ../.pnpm/@typescript-eslint+tsconfig-utils@8.46.3_typescript@5.9.3/node_modules/@typescript-eslint/tsconfig-utils
+│       ├── types -> ../.pnpm/@typescript-eslint+types@8.46.3/node_modules/@typescript-eslint/types
+│       ├── typescript-estree -> ../.pnpm/@typescript-eslint+typescript-estree@8.46.3_typescript@5.9.3/node_modules/@typescript-eslint/typescript-estree
+│       ├── type-utils -> ../.pnpm/@typescript-eslint+type-utils@8.46.3_eslint@9.39.1_jiti@2.6.1__typescript@5.9.3/node_modules/@typescript-eslint/type-utils
+│       ├── utils -> ../.pnpm/@typescript-eslint+utils@8.46.3_eslint@9.39.1_jiti@2.6.1__typescript@5.9.3/node_modules/@typescript-eslint/utils
+│       └── visitor-keys -> ../.pnpm/@typescript-eslint+visitor-keys@8.46.3/node_modules/@typescript-eslint/visitor-keys
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.mjs
+├── project-spec.json
+├── public
+│   └── logo
+│       ├── dark.svg
+│       └── light.svg
+├── README.md
+├── src
+│   ├── app
+│   │   ├── api
+│   │   │   ├── echo
+│   │   │   │   └── [...echo]
+│   │   │   │       └── route.ts
+│   │   │   ├── edit-image
+│   │   │   │   ├── google.ts
+│   │   │   │   ├── openai.ts
+│   │   │   │   ├── route.ts
+│   │   │   │   └── validation.ts
+│   │   │   └── generate-image
+│   │   │       ├── google.ts
+│   │   │       ├── openai.ts
+│   │   │       ├── route.ts
+│   │   │       └── validation.ts
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── providers.tsx
+│   ├── components
+│   │   ├── ai-elements
+│   │   │   └── prompt-input.tsx
+│   │   ├── balance.tsx
+│   │   ├── echo-account-next.tsx
+│   │   ├── echo-account.tsx
+│   │   ├── echo-button.tsx
+│   │   ├── echo-popover.tsx
+│   │   ├── echo-tokens.tsx
+│   │   ├── image-details-dialog.tsx
+│   │   ├── image-generator.tsx
+│   │   ├── image-history.tsx
+│   │   ├── logo.tsx
+│   │   ├── money-input.tsx
+│   │   ├── signin.tsx
+│   │   ├── top-up-button.tsx
+│   │   └── ui
+│   │       ├── avatar.tsx
+│   │       ├── button.tsx
+│   │       ├── dialog.tsx
+│   │       ├── dropdown-menu.tsx
+│   │       ├── input.tsx
+│   │       ├── popover.tsx
+│   │       ├── select.tsx
+│   │       ├── skeleton.tsx
+│   │       ├── textarea.tsx
+│   │       └── tooltip.tsx
+│   ├── echo
+│   │   └── index.ts
+│   └── lib
+│       ├── constants.ts
+│       ├── currency-utils.ts
+│       ├── echo.ts
+│       ├── image-actions.ts
+│       ├── image-utils.ts
+│       ├── types.ts
+│       └── utils.ts
+└── tsconfig.json
+
+84 directories, 59 files
