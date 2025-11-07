@@ -27,9 +27,11 @@ async function ensureEchoToken() {
   return token;
 }
 
+type JsonRequestInit = Omit<RequestInit, 'body'> & { body?: unknown };
+
 async function echoFetchJson<T>(
   path: string,
-  init: RequestInit & { body?: unknown } = {}
+  init: JsonRequestInit = {}
 ): Promise<T> {
   const token = await ensureEchoToken();
   const headers = new Headers(init.headers);
